@@ -163,6 +163,7 @@ namespace NEW_PROJECT_SIMS
             this.btnPrint.TabIndex = 3;
             this.btnPrint.Text = "PRINT";
             this.btnPrint.UseVisualStyleBackColor = false;
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click_1);
             // 
             // groupBox1
             // 

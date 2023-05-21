@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.IO;
+using Microsoft.Reporting.WinForms;
 
 namespace NEW_PROJECT_SIMS
 {
@@ -131,6 +132,11 @@ namespace NEW_PROJECT_SIMS
         private void button1_Click(object sender, EventArgs e)
         {
             this.Dispose();
+        }
+
+        private void btnPrint_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -22,5 +22,15 @@ namespace NEW_PROJECT_SIMS.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=Hawksprey;Initial Catalog=sims;Integrated Security=True")]
+        public string simsConnectionString {
+            get {
+                return ((string)(this["simsConnectionString"]));
+            }
+        }
     }
 }
