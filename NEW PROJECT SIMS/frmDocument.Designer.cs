@@ -72,7 +72,7 @@ namespace NEW_PROJECT_SIMS
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(886, 37);
+            this.panel1.Size = new System.Drawing.Size(931, 37);
             this.panel1.TabIndex = 61;
             // 
             // button1
@@ -82,7 +82,7 @@ namespace NEW_PROJECT_SIMS
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(820, 9);
+            this.button1.Location = new System.Drawing.Point(865, 9);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(62, 22);
             this.button1.TabIndex = 1;
@@ -109,7 +109,7 @@ namespace NEW_PROJECT_SIMS
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 37);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(886, 58);
+            this.panel2.Size = new System.Drawing.Size(931, 58);
             this.panel2.TabIndex = 62;
             // 
             // txtSearch
@@ -132,7 +132,7 @@ namespace NEW_PROJECT_SIMS
             this.txtSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtSearch.Icon = ((System.Drawing.Image)(resources.GetObject("txtSearch.Icon")));
             this.txtSearch.Lines = new string[0];
-            this.txtSearch.Location = new System.Drawing.Point(586, 19);
+            this.txtSearch.Location = new System.Drawing.Point(631, 19);
             this.txtSearch.MaxLength = 32767;
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.PasswordChar = '\0';
@@ -170,7 +170,7 @@ namespace NEW_PROJECT_SIMS
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.Controls.Add(this.dateTimePicker2);
             this.groupBox1.Controls.Add(this.dateTimePicker1);
-            this.groupBox1.Location = new System.Drawing.Point(274, 7);
+            this.groupBox1.Location = new System.Drawing.Point(319, 7);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(306, 48);
             this.groupBox1.TabIndex = 6;
@@ -245,7 +245,7 @@ namespace NEW_PROJECT_SIMS
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowTemplate.Height = 30;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(886, 398);
+            this.dataGridView1.Size = new System.Drawing.Size(931, 398);
             this.dataGridView1.TabIndex = 100;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -353,7 +353,7 @@ namespace NEW_PROJECT_SIMS
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(886, 493);
+            this.ClientSize = new System.Drawing.Size(931, 493);
             this.ControlBox = false;
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel2);

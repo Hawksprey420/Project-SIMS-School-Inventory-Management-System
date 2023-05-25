@@ -136,7 +136,8 @@ namespace NEW_PROJECT_SIMS
 
         private void btnPrint_Click_1(object sender, EventArgs e)
         {
-
+            frmInventory_PrintPreview f = new frmInventory_PrintPreview();
+            f.Show();
         }
     }
 }
