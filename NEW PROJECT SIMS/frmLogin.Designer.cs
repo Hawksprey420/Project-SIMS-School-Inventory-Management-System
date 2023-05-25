@@ -176,7 +176,7 @@ namespace NEW_PROJECT_SIMS
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(191)))), ((int)(((byte)(107)))));
-            this.label2.Location = new System.Drawing.Point(147, 16);
+            this.label2.Location = new System.Drawing.Point(95, 16);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(190, 18);
             this.label2.TabIndex = 1;
