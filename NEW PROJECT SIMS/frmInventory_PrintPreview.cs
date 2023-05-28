@@ -19,6 +19,8 @@ namespace NEW_PROJECT_SIMS
 
         private void frmInventory_PrintPreview_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'simsDataSet.tblInventory' table. You can move, or remove it, as needed.
+            this.tblInventoryTableAdapter.Fill(this.simsDataSet.tblInventory);
 
             this.reportViewer1.RefreshReport();
         }
