@@ -65,6 +65,7 @@
                             <TextRun>
                               <Value>Inventory quantity</Value>
                               <Style>
+                                <FontFamily>Segoe UI Variable Display Semibold</FontFamily>
                                 <FontSize>35pt</FontSize>
                               </Style>
                             </TextRun>
@@ -97,6 +98,7 @@
                             <TextRun>
                               <Value>Inventory quality</Value>
                               <Style>
+                                <FontFamily>Segoe UI Variable Display Semibold</FontFamily>
                                 <FontSize>35pt</FontSize>
                               </Style>
                             </TextRun>
@@ -129,6 +131,7 @@
                             <TextRun>
                               <Value>Inventory status</Value>
                               <Style>
+                                <FontFamily>Segoe UI Variable Display Semibold</FontFamily>
                                 <FontSize>35pt</FontSize>
                               </Style>
                             </TextRun>
@@ -166,6 +169,7 @@
                             <TextRun>
                               <Value>=Fields!quantity.Value</Value>
                               <Style>
+                                <FontFamily>Segoe UI Variable Display Semibold</FontFamily>
                                 <FontSize>35pt</FontSize>
                               </Style>
                             </TextRun>
@@ -198,6 +202,7 @@
                             <TextRun>
                               <Value>=Fields!quality.Value</Value>
                               <Style>
+                                <FontFamily>Segoe UI Variable Display Semibold</FontFamily>
                                 <FontSize>35pt</FontSize>
                               </Style>
                             </TextRun>
@@ -230,6 +235,7 @@
                             <TextRun>
                               <Value>=Fields!status.Value</Value>
                               <Style>
+                                <FontFamily>Segoe UI Variable Display Semibold</FontFamily>
                                 <FontSize>35pt</FontSize>
                               </Style>
                             </TextRun>
@@ -312,6 +318,7 @@
                             <TextRun>
                               <Value>Inventory description</Value>
                               <Style>
+                                <FontFamily>Segoe UI Variable Display Semib</FontFamily>
                                 <FontSize>35pt</FontSize>
                               </Style>
                             </TextRun>
@@ -344,6 +351,7 @@
                             <TextRun>
                               <Value>Inventory brand</Value>
                               <Style>
+                                <FontFamily>Segoe UI Variable Display Semib</FontFamily>
                                 <FontSize>35pt</FontSize>
                               </Style>
                             </TextRun>
@@ -376,6 +384,7 @@
                             <TextRun>
                               <Value>Inventory model</Value>
                               <Style>
+                                <FontFamily>Segoe UI Variable Display Semib</FontFamily>
                                 <FontSize>35pt</FontSize>
                               </Style>
                             </TextRun>
@@ -413,6 +422,7 @@
                             <TextRun>
                               <Value>=Fields!description.Value</Value>
                               <Style>
+                                <FontFamily>Segoe UI Variable Display Semib</FontFamily>
                                 <FontSize>35pt</FontSize>
                               </Style>
                             </TextRun>
@@ -445,6 +455,7 @@
                             <TextRun>
                               <Value>=Fields!brand.Value</Value>
                               <Style>
+                                <FontFamily>Segoe UI Variable Display Semib</FontFamily>
                                 <FontSize>35pt</FontSize>
                               </Style>
                             </TextRun>
@@ -477,6 +488,7 @@
                             <TextRun>
                               <Value>=Fields!model.Value</Value>
                               <Style>
+                                <FontFamily>Segoe UI Variable Display Semib</FontFamily>
                                 <FontSize>35pt</FontSize>
                               </Style>
                             </TextRun>
@@ -523,7 +535,7 @@
         <Top>5.13588cm</Top>
         <Left>26.49523cm</Left>
         <Height>7.55cm</Height>
-        <Width>25.74698cm</Width>
+        <Width>25.74699cm</Width>
         <ZIndex>2</ZIndex>
         <Style>
           <Border>
@@ -559,6 +571,7 @@
                             <TextRun>
                               <Value>Inventory serial number</Value>
                               <Style>
+                                <FontFamily>Segoe UI Variable Display Semibold</FontFamily>
                                 <FontSize>35pt</FontSize>
                               </Style>
                             </TextRun>
@@ -591,6 +604,7 @@
                             <TextRun>
                               <Value>Inventory unit cost</Value>
                               <Style>
+                                <FontFamily>Segoe UI Variable Display Semibold</FontFamily>
                                 <FontSize>35pt</FontSize>
                               </Style>
                             </TextRun>
@@ -623,6 +637,7 @@
                             <TextRun>
                               <Value>Depreciation value</Value>
                               <Style>
+                                <FontFamily>Segoe UI Variable Display Semibold</FontFamily>
                                 <FontSize>35pt</FontSize>
                               </Style>
                             </TextRun>
@@ -660,6 +675,7 @@
                             <TextRun>
                               <Value>=Fields!serialNo.Value</Value>
                               <Style>
+                                <FontFamily>Segoe UI Variable Display Semibold</FontFamily>
                                 <FontSize>35pt</FontSize>
                               </Style>
                             </TextRun>
@@ -692,6 +708,7 @@
                             <TextRun>
                               <Value>=Fields!uc.Value</Value>
                               <Style>
+                                <FontFamily>Segoe UI Variable Display Semibold</FontFamily>
                                 <FontSize>35pt</FontSize>
                               </Style>
                             </TextRun>
@@ -724,6 +741,7 @@
                             <TextRun>
                               <Value>=Fields!dv.Value</Value>
                               <Style>
+                                <FontFamily>Segoe UI Variable Display Semibold</FontFamily>
                                 <FontSize>35pt</FontSize>
                               </Style>
                             </TextRun>
@@ -770,7 +788,7 @@
         <Top>5.13588cm</Top>
         <Left>52.24221cm</Left>
         <Height>7.55cm</Height>
-        <Width>27.59429cm</Width>
+        <Width>27.5943cm</Width>
         <ZIndex>3</ZIndex>
         <Style>
           <Border>
@@ -806,6 +824,7 @@
                             <TextRun>
                               <Value>Inventory department</Value>
                               <Style>
+                                <FontFamily>Segoe UI Variable Display Semib</FontFamily>
                                 <FontSize>35pt</FontSize>
                               </Style>
                             </TextRun>
@@ -838,6 +857,7 @@
                             <TextRun>
                               <Value>Building</Value>
                               <Style>
+                                <FontFamily>Segoe UI Variable Display Semib</FontFamily>
                                 <FontSize>35pt</FontSize>
                               </Style>
                             </TextRun>
@@ -870,6 +890,7 @@
                             <TextRun>
                               <Value>Room</Value>
                               <Style>
+                                <FontFamily>Segoe UI Variable Display Semib</FontFamily>
                                 <FontSize>35pt</FontSize>
                               </Style>
                             </TextRun>
@@ -907,6 +928,7 @@
                             <TextRun>
                               <Value>=Fields!department.Value</Value>
                               <Style>
+                                <FontFamily>Segoe UI Variable Display Semib</FontFamily>
                                 <FontSize>35pt</FontSize>
                               </Style>
                             </TextRun>
@@ -939,6 +961,7 @@
                             <TextRun>
                               <Value>=Fields!building.Value</Value>
                               <Style>
+                                <FontFamily>Segoe UI Variable Display Semib</FontFamily>
                                 <FontSize>35pt</FontSize>
                               </Style>
                             </TextRun>
@@ -971,6 +994,7 @@
                             <TextRun>
                               <Value>=Fields!room.Value</Value>
                               <Style>
+                                <FontFamily>Segoe UI Variable Display Semib</FontFamily>
                                 <FontSize>35pt</FontSize>
                               </Style>
                             </TextRun>
@@ -1058,7 +1082,7 @@
         </Paragraphs>
         <rd:DefaultName>Textbox8008</rd:DefaultName>
         <Top>32.75823cm</Top>
-        <Left>0.69535cm</Left>
+        <Left>1.11404cm</Left>
         <Height>3.19685cm</Height>
         <Width>25.79989cm</Width>
         <ZIndex>5</ZIndex>
@@ -1106,16 +1130,16 @@
                 <TextRun>
                   <Value>Issued on:</Value>
                   <Style>
-                    <FontFamily>Segoe UI Variable Display Semil</FontFamily>
-                    <FontSize>60pt</FontSize>
+                    <FontFamily>Segoe UI Variable Display Semib</FontFamily>
+                    <FontSize>48pt</FontSize>
                     <FontWeight>SemiBold</FontWeight>
                   </Style>
                 </TextRun>
                 <TextRun>
                   <Value>=Globals!ExecutionTime</Value>
                   <Style>
-                    <FontFamily>Segoe UI Variable Display Semil</FontFamily>
-                    <FontSize>60pt</FontSize>
+                    <FontFamily>Segoe UI Variable Display Semib</FontFamily>
+                    <FontSize>48pt</FontSize>
                     <FontWeight>SemiBold</FontWeight>
                   </Style>
                 </TextRun>
@@ -1127,8 +1151,8 @@
                 <TextRun>
                   <Value />
                   <Style>
-                    <FontFamily>Segoe UI Variable Display Semil</FontFamily>
-                    <FontSize>60pt</FontSize>
+                    <FontFamily>Segoe UI Variable Display Semib</FontFamily>
+                    <FontSize>48pt</FontSize>
                     <FontWeight>SemiBold</FontWeight>
                   </Style>
                 </TextRun>
