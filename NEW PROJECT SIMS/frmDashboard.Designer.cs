@@ -29,6 +29,7 @@ namespace NEW_PROJECT_SIMS
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDashboard));
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnMaintenance = new System.Windows.Forms.Button();
@@ -64,6 +65,10 @@ namespace NEW_PROJECT_SIMS
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.simsDataSet = new NEW_PROJECT_SIMS.simsDataSet();
+            this.tblInventoryBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tblInventoryTableAdapter = new NEW_PROJECT_SIMS.simsDataSetTableAdapters.tblInventoryTableAdapter();
+            this.btnRefresh = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -79,6 +84,8 @@ namespace NEW_PROJECT_SIMS
             this.panel8.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.simsDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblInventoryBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -238,6 +245,7 @@ namespace NEW_PROJECT_SIMS
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.btnRefresh);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label1);
@@ -353,6 +361,7 @@ namespace NEW_PROJECT_SIMS
             this.lblRoom.TabIndex = 5;
             this.lblRoom.Text = "0";
             this.lblRoom.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblRoom.Click += new System.EventHandler(this.lblRoom_Click);
             // 
             // label5
             // 
@@ -458,6 +467,7 @@ namespace NEW_PROJECT_SIMS
             this.lblInventory.TabIndex = 5;
             this.lblInventory.Text = "0";
             this.lblInventory.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblInventory.TextChanged += new System.EventHandler(this.lblInventory_TextChanged);
             this.lblInventory.Click += new System.EventHandler(this.lblInventory_Click);
             // 
             // label8
@@ -499,6 +509,34 @@ namespace NEW_PROJECT_SIMS
             this.panel7.TabIndex = 7;
             this.panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.panel7_Paint);
             // 
+            // simsDataSet
+            // 
+            this.simsDataSet.DataSetName = "simsDataSet";
+            this.simsDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tblInventoryBindingSource
+            // 
+            this.tblInventoryBindingSource.DataMember = "tblInventory";
+            this.tblInventoryBindingSource.DataSource = this.simsDataSet;
+            // 
+            // tblInventoryTableAdapter
+            // 
+            this.tblInventoryTableAdapter.ClearBeforeFill = true;
+            // 
+            // btnRefresh
+            // 
+            this.btnRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(152)))), ((int)(((byte)(218)))));
+            this.btnRefresh.FlatAppearance.BorderSize = 0;
+            this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRefresh.ForeColor = System.Drawing.Color.White;
+            this.btnRefresh.Location = new System.Drawing.Point(1017, 64);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(72, 22);
+            this.btnRefresh.TabIndex = 4;
+            this.btnRefresh.Text = "PRINT";
+            this.btnRefresh.UseVisualStyleBackColor = false;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+            // 
             // frmDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -513,6 +551,7 @@ namespace NEW_PROJECT_SIMS
             this.Name = "frmDashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frmDashboard_Load);
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
@@ -530,6 +569,8 @@ namespace NEW_PROJECT_SIMS
             this.panel8.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.simsDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblInventoryBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -570,5 +611,9 @@ namespace NEW_PROJECT_SIMS
         public System.Windows.Forms.Label lblInventory;
         private System.Windows.Forms.Label Pos;
         private System.Windows.Forms.Label user;
+        private simsDataSet simsDataSet;
+        private System.Windows.Forms.BindingSource tblInventoryBindingSource;
+        private simsDataSetTableAdapters.tblInventoryTableAdapter tblInventoryTableAdapter;
+        private System.Windows.Forms.Button btnRefresh;
     }
 }

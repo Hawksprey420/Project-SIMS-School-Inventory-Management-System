@@ -17,11 +17,15 @@ namespace NEW_PROJECT_SIMS
         SqlConnection cn;
         SqlCommand cm;
         SqlDataReader dr;
+        private Timer timer;
 
         public frmDashboard()
         {
             InitializeComponent();
             cn = new SqlConnection(dbnconstring.connection);
+            timer = new Timer();
+            timer.Interval = 1000; // Set the interval to 1 second (1000 milliseconds)
+            timer.Tick += Timer_Tick;
         }
 
         private void btnInventory_Click_1(object sender, EventArgs e)
@@ -72,12 +76,12 @@ namespace NEW_PROJECT_SIMS
 
         private void lblUser_Click(object sender, EventArgs e)
         {
-
+            this.Refresh();
         }
 
         private void lblInventory_Click(object sender, EventArgs e)
         {
-
+            lblInventory.Refresh();
         }
         public void LoadAdmin()
         {
@@ -103,10 +107,7 @@ namespace NEW_PROJECT_SIMS
                 cn.Close();
                 MessageBox.Show(ex.Message, var._title, MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-        }
 
-        private void frmDashboard_Load(object sender, EventArgs e)
-        {
             lblInventory.Text = CountRecords("select count (*) from tblInventory");
             lblDepartment.Text = CountRecords("select count (*) from tblDepartment");
             lblBuilding.Text = CountRecords("select count (*) from tblBuilding");
@@ -118,9 +119,9 @@ namespace NEW_PROJECT_SIMS
         {
             cn.Open();
             cm = new SqlCommand (sql, cn);
-            string _count = cm.ExecuteScalar().ToString();
+            string count = cm.ExecuteScalar().ToString();
             cn.Close();
-            return _count;
+            return count;
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -131,6 +132,39 @@ namespace NEW_PROJECT_SIMS
         private void panel7_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void lblRoom_Click(object sender, EventArgs e)
+        {
+            lblRoom.Refresh();
+        }
+
+        private void frmDashboard_Load(object sender, EventArgs e)
+        {
+            timer.Start();
+        }
+
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            UpdateCounts();
+        }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            this.Refresh();
+        }
+        private void UpdateCounts()
+        {
+            _ = lblInventory.Text;
+            _ = lblDepartment.Text;
+            _ = lblBuilding.Text;
+            _ = lblRoom.Text;
+            _ = lblRecipient.Text;
+        }
+
+        private void lblInventory_TextChanged(object sender, EventArgs e)
+        {
+       
         }
     }
 }

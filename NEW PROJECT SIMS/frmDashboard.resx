@@ -121,7 +121,7 @@
   <data name="btnMaintenance.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        cwAAAHMBY8FD/gAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAFTSURBVDhPjdI5
+        cQAAAHEBHD+AdwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAFTSURBVDhPjdI5
         LwdBGMfxRYJCVCh0rlpCQ+EoFChVEokzjogrFCiIoyERUaCTCIJGIUGl8Ba8I9/vZmYzwV/8kk92dmb3
         mWePLKQf+4Hj31KP+aDOiRhvcLICo1hAH9K04BSNgeMm5HHXTozg2QmyF44xBxiAm7nmuLjGxW58Yghz
         uMdR4gHeHAt4fMQ4sh4shxMLLaEX8WJNwUeLc44nYPdZNa4xiDW8oBVpgTJswG61HuZcy3fdxjDeYctv
@@ -133,7 +133,7 @@
   <data name="btnLogOut.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        cwAAAHMBY8FD/gAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAC/SURBVDhPvdPB
+        cQAAAHEBHD+AdwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAC/SURBVDhPvdPB
         CgFBGMDxiYObKEdbjhwUL+ABHByUi/fwFm5SclEcthRFiTfwFMq+if83O+MwZlor/OvX7LB9m8kqmuOO
         BFfssXWc0IW3nVnLGCPGBnXYKlill6/JE9wiLNLLZ777dKEv3M+/NqCNJQp6R+8OaJpVGmKNomyyBtQw
         8pjigt8PsLXMKuX6CTa7//gQQ/f9Z0AVwb/yEfownG6QIUJepg689XHADD3I4ZQgL1WuGphAhp0xQEZK
@@ -143,7 +143,7 @@
   <data name="btnDocument.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        WwAAAFsB1WNqDwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAE/SURBVDhPpdPN
+        WQAAAFkBqp2phgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAE/SURBVDhPpdPN
         K0RRGMfxG1YYL8VCJmFBSpMkZSEzY0ERCzRSIpHZsVFSlLdMycta2VlMFsqCnb/Hn3F9f7dnrtN1bk05
         9aln7jn3d597zp2AcYpKne7QFYZhUKNRsWIC5RRLtmYe+bSABxynKNUT0I0V7CZsYyAZwNjEhYoowC6O
         QYtcRWdevwtYxQs+8Rtgi2bg24cpFLGGb6zjEn8COtHv0W7z2pMRvFsdHU8TbvGYoKeVrF5EL/TUSZzg
@@ -155,7 +155,7 @@
   <data name="btnInventory.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        cwAAAHMBY8FD/gAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAFTSURBVDhPjdI5
+        cQAAAHEBHD+AdwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAFTSURBVDhPjdI5
         LwdBGMfxRYJCVCh0rlpCQ+EoFChVEokzjogrFCiIoyERUaCTCIJGIUGl8Ba8I9/vZmYzwV/8kk92dmb3
         mWePLKQf+4Hj31KP+aDOiRhvcLICo1hAH9K04BSNgeMm5HHXTozg2QmyF44xBxiAm7nmuLjGxW58Yghz
         uMdR4gHeHAt4fMQ4sh4shxMLLaEX8WJNwUeLc44nYPdZNa4xiDW8oBVpgTJswG61HuZcy3fdxjDeYctv
@@ -370,4 +370,13 @@
         UpSgBSlKAFKUoAUpSgD/2Q==
 </value>
   </data>
+  <metadata name="simsDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="tblInventoryBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>144, 17</value>
+  </metadata>
+  <metadata name="tblInventoryTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>360, 17</value>
+  </metadata>
 </root>
