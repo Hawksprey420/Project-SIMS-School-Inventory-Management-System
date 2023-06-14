@@ -91,8 +91,26 @@ namespace NEW_PROJECT_SIMS
                 cn.Close();
                 MessageBox.Show(ex.Message, var._title, MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+            lblInventory.Text = CountRecords("select count (*) from tblInventory");
+            lblDepartment.Text = CountRecords("select count (*) from tblDepartment");
+            lblBuilding.Text = CountRecords("select count (*) from tblBuilding");
+            lblRoom.Text = CountRecords("select count (*) from tblRoom");
+            lblRecipient.Text = CountRecords("select count (*) from tblRecipient");
         }
 
+        public string CountRecords(string sql)
+        {
+            cn.Open();
+            cm = new SqlCommand(sql, cn);
+            string count = cm.ExecuteScalar().ToString();
+            cn.Close();
+            return count;
+        }
+
+        private void panel7_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
     
 }

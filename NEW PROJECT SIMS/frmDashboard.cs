@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using Microsoft.ReportingServices.Diagnostics.Internal;
 
 
 namespace NEW_PROJECT_SIMS
@@ -17,15 +18,11 @@ namespace NEW_PROJECT_SIMS
         SqlConnection cn;
         SqlCommand cm;
         SqlDataReader dr;
-        private Timer timer;
 
         public frmDashboard()
         {
             InitializeComponent();
             cn = new SqlConnection(dbnconstring.connection);
-            timer = new Timer();
-            timer.Interval = 1000; // Set the interval to 1 second (1000 milliseconds)
-            timer.Tick += Timer_Tick;
         }
 
         private void btnInventory_Click_1(object sender, EventArgs e)
@@ -123,6 +120,19 @@ namespace NEW_PROJECT_SIMS
             cn.Close();
             return count;
         }
+        private string GetRowCount(string dbnconstring)
+        {
+            string query = "SELECT COUNT(*) FROM tblInventory, tblDepartment, tblBuilding, tblRoom, tblRecipient ";
+
+            using (SqlConnection connection = new SqlConnection(dbnconstring))
+            {
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    int count = (int)command.ExecuteScalar();
+                    return count.ToString();
+                }
+            }
+        }
 
         private void label2_Click(object sender, EventArgs e)
         {
@@ -141,25 +151,12 @@ namespace NEW_PROJECT_SIMS
 
         private void frmDashboard_Load(object sender, EventArgs e)
         {
-            timer.Start();
-        }
 
-        private void Timer_Tick(object sender, EventArgs e)
-        {
-            UpdateCounts();
         }
 
         private void btnRefresh_Click(object sender, EventArgs e)
         {
-            this.Refresh();
-        }
-        private void UpdateCounts()
-        {
-            _ = lblInventory.Text;
-            _ = lblDepartment.Text;
-            _ = lblBuilding.Text;
-            _ = lblRoom.Text;
-            _ = lblRecipient.Text;
+            Refresh();
         }
 
         private void lblInventory_TextChanged(object sender, EventArgs e)

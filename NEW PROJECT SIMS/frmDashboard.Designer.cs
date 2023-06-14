@@ -529,11 +529,11 @@ namespace NEW_PROJECT_SIMS
             this.btnRefresh.FlatAppearance.BorderSize = 0;
             this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRefresh.ForeColor = System.Drawing.Color.White;
-            this.btnRefresh.Location = new System.Drawing.Point(1017, 64);
+            this.btnRefresh.Location = new System.Drawing.Point(1026, 64);
             this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(72, 22);
+            this.btnRefresh.Size = new System.Drawing.Size(63, 22);
             this.btnRefresh.TabIndex = 4;
-            this.btnRefresh.Text = "PRINT";
+            this.btnRefresh.Text = "Refresh";
             this.btnRefresh.UseVisualStyleBackColor = false;
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 

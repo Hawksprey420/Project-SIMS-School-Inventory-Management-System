@@ -56,14 +56,14 @@ namespace NEW_PROJECT_SIMS
             this.btnInventory = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.Pos = new System.Windows.Forms.Label();
+            this.user = new System.Windows.Forms.Label();
             this.panel14 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.user = new System.Windows.Forms.Label();
-            this.Pos = new System.Windows.Forms.Label();
             this.panel8.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel10.SuspendLayout();
@@ -296,6 +296,7 @@ namespace NEW_PROJECT_SIMS
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(889, 396);
             this.panel7.TabIndex = 7;
+            this.panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.panel7_Paint);
             // 
             // panel1
             // 
@@ -407,6 +408,29 @@ namespace NEW_PROJECT_SIMS
             this.panel4.Size = new System.Drawing.Size(177, 166);
             this.panel4.TabIndex = 0;
             // 
+            // Pos
+            // 
+            this.Pos.AutoSize = true;
+            this.Pos.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Pos.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Pos.ForeColor = System.Drawing.Color.White;
+            this.Pos.Location = new System.Drawing.Point(38, 144);
+            this.Pos.Name = "Pos";
+            this.Pos.Size = new System.Drawing.Size(0, 19);
+            this.Pos.TabIndex = 5;
+            this.Pos.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // user
+            // 
+            this.user.AutoSize = true;
+            this.user.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.user.ForeColor = System.Drawing.Color.White;
+            this.user.Location = new System.Drawing.Point(56, 122);
+            this.user.Name = "user";
+            this.user.Size = new System.Drawing.Size(0, 19);
+            this.user.TabIndex = 4;
+            this.user.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // panel14
             // 
             this.panel14.BackColor = System.Drawing.Color.White;
@@ -472,29 +496,6 @@ namespace NEW_PROJECT_SIMS
             this.label1.Size = new System.Drawing.Size(665, 36);
             this.label1.TabIndex = 0;
             this.label1.Text = "PROJECT SCHOOL INVENTORY MANAGEMENT SYSTEM";
-            // 
-            // user
-            // 
-            this.user.AutoSize = true;
-            this.user.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.user.ForeColor = System.Drawing.Color.White;
-            this.user.Location = new System.Drawing.Point(56, 122);
-            this.user.Name = "user";
-            this.user.Size = new System.Drawing.Size(0, 19);
-            this.user.TabIndex = 4;
-            this.user.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Pos
-            // 
-            this.Pos.AutoSize = true;
-            this.Pos.Cursor = System.Windows.Forms.Cursors.Default;
-            this.Pos.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Pos.ForeColor = System.Drawing.Color.White;
-            this.Pos.Location = new System.Drawing.Point(38, 144);
-            this.Pos.Name = "Pos";
-            this.Pos.Size = new System.Drawing.Size(0, 19);
-            this.Pos.TabIndex = 5;
-            this.Pos.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // frmStaff
             // 
