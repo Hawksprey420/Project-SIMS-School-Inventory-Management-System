@@ -117,6 +117,9 @@
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </Compile>
     <Compile Include="dbnconstring.cs" />
+    <Compile Include="frmDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmDocument.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -135,9 +138,6 @@
     <Compile Include="frmBuilding.Designer.cs">
       <DependentUpon>frmBuilding.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmDashboard.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="frmDashboard.Designer.cs">
       <DependentUpon>frmDashboard.cs</DependentUpon>
     </Compile>
@@ -155,9 +155,11 @@
     </Compile>
     <Compile Include="frmInventory_PrintPreview.cs">
       <SubType>Form</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="frmInventory_PrintPreview.Designer.cs">
       <DependentUpon>frmInventory_PrintPreview.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
@@ -259,6 +261,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmInventory_PrintPreview.resx">
       <DependentUpon>frmInventory_PrintPreview.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
@@ -302,7 +305,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="Report1.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Include="bin\Debug\config.jo">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="DataSet1.xsc">
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </None>

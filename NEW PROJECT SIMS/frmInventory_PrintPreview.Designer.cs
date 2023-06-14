@@ -30,25 +30,20 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            this.tblInventoryBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.simsDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.simsDataSet = new NEW_PROJECT_SIMS.simsDataSet();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.tblInventoryBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tblInventoryTableAdapter = new NEW_PROJECT_SIMS.simsDataSetTableAdapters.tblInventoryTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.tblInventoryBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.simsDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.simsDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblInventoryBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
-            // simsDataSetBindingSource
+            // tblInventoryBindingSource
             // 
-            this.simsDataSetBindingSource.DataSource = this.simsDataSet;
-            this.simsDataSetBindingSource.Position = 0;
-            // 
-            // simsDataSet
-            // 
-            this.simsDataSet.DataSetName = "simsDataSet";
-            this.simsDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.tblInventoryBindingSource.DataMember = "tblInventory";
+            this.tblInventoryBindingSource.DataSource = this.simsDataSetBindingSource;
             // 
             // reportViewer1
             // 
@@ -63,10 +58,15 @@
             this.reportViewer1.Size = new System.Drawing.Size(1014, 587);
             this.reportViewer1.TabIndex = 0;
             // 
-            // tblInventoryBindingSource
+            // simsDataSetBindingSource
             // 
-            this.tblInventoryBindingSource.DataMember = "tblInventory";
-            this.tblInventoryBindingSource.DataSource = this.simsDataSetBindingSource;
+            this.simsDataSetBindingSource.DataSource = this.simsDataSet;
+            this.simsDataSetBindingSource.Position = 0;
+            // 
+            // simsDataSet
+            // 
+            this.simsDataSet.DataSetName = "simsDataSet";
+            this.simsDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // tblInventoryTableAdapter
             // 
@@ -81,9 +81,9 @@
             this.Name = "frmInventory_PrintPreview";
             this.Text = "frmInventory_PrintPreview";
             this.Load += new System.EventHandler(this.frmInventory_PrintPreview_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.tblInventoryBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.simsDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.simsDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblInventoryBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

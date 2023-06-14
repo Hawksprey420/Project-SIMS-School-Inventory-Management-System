@@ -105,7 +105,30 @@ namespace NEW_PROJECT_SIMS
             }
         }
 
+        private void frmDashboard_Load(object sender, EventArgs e)
+        {
+            lblInventory.Text = CountRecords("select count (*) from tblInventory");
+            lblDepartment.Text = CountRecords("select count (*) from tblDepartment");
+            lblBuilding.Text = CountRecords("select count (*) from tblBuilding");
+            lblRoom.Text = CountRecords("select count (*) from tblRoom");
+            lblRecipient.Text = CountRecords("select count (*) from tblRecipient");
+        }
+
+        public string CountRecords(string sql)
+        {
+            cn.Open();
+            cm = new SqlCommand (sql, cn);
+            string _count = cm.ExecuteScalar().ToString();
+            cn.Close();
+            return _count;
+        }
+
         private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel7_Paint(object sender, PaintEventArgs e)
         {
 
         }

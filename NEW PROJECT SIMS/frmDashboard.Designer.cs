@@ -497,6 +497,7 @@ namespace NEW_PROJECT_SIMS
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(1207, 430);
             this.panel7.TabIndex = 7;
+            this.panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.panel7_Paint);
             // 
             // frmDashboard
             // 
