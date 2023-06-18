@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.32901.82
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NEW PROJECT SIMS", "NEW PROJECT SIMS\NEW PROJECT SIMS.csproj", "{3BCC7EFA-3793-42ED-8E35-025BD105A7D7}"
 EndProject
